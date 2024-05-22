@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PanelManager : MonoBehaviour
+public class MenuController : MonoBehaviour
 {
     public GameObject menuInicial;
     public GameObject panelOpciones;
