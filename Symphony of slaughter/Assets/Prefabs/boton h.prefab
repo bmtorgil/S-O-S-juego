@@ -138,10 +138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 200
-  contador: 0
-  adentro: 0
-  slider: {fileID: 0}
   tecla: 104
+  slider1: {fileID: 0}
+  slider2: {fileID: 0}
 --- !u!1 &3807291998537028339
 GameObject:
   m_ObjectHideFlags: 0

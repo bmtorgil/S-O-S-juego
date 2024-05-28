@@ -6,52 +6,29 @@ using UnityEngine.UI;
 public class BotonesLogica : MonoBehaviour
 {
     public float velocidad;
-    public int contador = 0;
-    public bool adentro = false;
-    public Slider slider; // Referencia al slider
-    public KeyCode tecla; // Tecla que activa el botón
+    public KeyCode tecla; // Tecla asociada al botón
+    public Slider slider1; // Primer slider
+
+    private bool adentro = false;
 
     void Start()
     {
-        // Asegúrate de que el slider tenga un valor inicial
-        if (slider != null)
+        // Asegúrate de que los sliders tengan un valor inicial
+        if (slider1 != null)
         {
-            slider.value = slider.maxValue; // Opcional: Inicializar el slider al valor máximo
+            slider1.value = slider1.maxValue;
         }
+
     }
 
     void Update()
     {
-        // Cambiar movimiento a arriba y abajo
+        // Movimiento de arriba a abajo
         transform.position += Vector3.down * velocidad * Time.deltaTime;
-
-        if (contador == 2)
-        {
-            adentro = true;
-        }
-        else
-        {
-            adentro = false;
-        }
 
         if (Input.GetKeyDown(tecla))
         {
-            if (adentro)
-            {
-                // Aquí disminuimos el slider si el objeto está sobre la línea F y se pulsa la tecla asignada
-                if (slider != null)
-                {
-                    slider.value -= 1; // Decrementar el valor del slider
-                }
-
-                LogicaJugador logicaJugador = GameObject.Find("linea f").GetComponent<LogicaJugador>();
-                if (logicaJugador != null)
-                {
-                    logicaJugador.puntuacion++;
-                    logicaJugador.texto.text = "score: " + logicaJugador.puntuacion.ToString();
-                }
-                Destroy(gameObject);
-            }
+            PressButton();
         }
     }
 
@@ -59,7 +36,7 @@ public class BotonesLogica : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            contador++;
+            adentro = true;
         }
     }
 
@@ -67,7 +44,17 @@ public class BotonesLogica : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            contador--;
+            adentro = false;
         }
+    }
+
+    public void PressButton()
+    {
+        if (adentro && slider1 != null)
+        {
+            slider1.value -= 1;
+        }
+
+        Destroy(gameObject);
     }
 }

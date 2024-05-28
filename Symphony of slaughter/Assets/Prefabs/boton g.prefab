@@ -137,11 +137,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a824a2203ff1634418b4512da9ad9202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 149.2
-  contador: 0
-  adentro: 0
-  slider: {fileID: 0}
+  velocidad: 200
   tecla: 103
+  slider1: {fileID: 0}
+  slider2: {fileID: 0}
 --- !u!1 &4565282864759986146
 GameObject:
   m_ObjectHideFlags: 0
