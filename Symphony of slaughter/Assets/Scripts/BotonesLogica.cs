@@ -9,6 +9,7 @@ public class BotonesLogica : MonoBehaviour
     public int contador = 0;
     public bool adentro = false;
     public Slider slider; // Referencia al slider
+    public KeyCode tecla; // Tecla que activa el botón
 
     void Start()
     {
@@ -33,11 +34,11 @@ public class BotonesLogica : MonoBehaviour
             adentro = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(tecla))
         {
             if (adentro)
             {
-                // Aquí disminuimos el slider si el objeto está sobre la línea F y se pulsa la tecla F
+                // Aquí disminuimos el slider si el objeto está sobre la línea F y se pulsa la tecla asignada
                 if (slider != null)
                 {
                     slider.value -= 1; // Decrementar el valor del slider
