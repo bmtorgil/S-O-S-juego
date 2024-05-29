@@ -140,7 +140,6 @@ MonoBehaviour:
   velocidad: 200
   tecla: 102
   slider1: {fileID: 0}
-  slider2: {fileID: 0}
 --- !u!1 &6805773577085311217
 GameObject:
   m_ObjectHideFlags: 0
