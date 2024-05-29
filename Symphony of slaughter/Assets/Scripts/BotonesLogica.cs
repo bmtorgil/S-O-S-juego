@@ -6,30 +6,27 @@ using UnityEngine.UI;
 public class BotonesLogica : MonoBehaviour
 {
     public float velocidad;
-    public bool adentro = false;
+    public KeyCode tecla; // Tecla asociada al botón
     public Slider slider1; // Primer slider
-    public Slider slider2; // Segundo slider
+
+    private static List<BotonesLogica> botonesActivos = new List<BotonesLogica>(); // Lista de botones activos
+    private bool adentro = false;
 
     void Start()
     {
         // Asegúrate de que los sliders tengan un valor inicial
         if (slider1 != null)
         {
-            slider1.value = slider1.maxValue; // Opcional: Inicializar el primer slider al valor máximo
-        }
-
-        if (slider2 != null)
-        {
-            slider2.value = slider2.maxValue; // Opcional: Inicializar el segundo slider al valor máximo
+            slider1.value = slider1.maxValue;
         }
     }
 
     void Update()
     {
-        // Cambiar movimiento a arriba y abajo
+        // Movimiento de arriba a abajo
         transform.position += Vector3.down * velocidad * Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(tecla))
         {
             PressButton();
         }
@@ -53,16 +50,12 @@ public class BotonesLogica : MonoBehaviour
 
     public void PressButton()
     {
-        // Si el objeto está dentro de "linea f", baja el valor de slider1
-        if (adentro && slider1 != null)
+        // Si este botón está dentro del área y no está en la lista de botones activos, agrégalo a la lista
+        if (adentro && slider1 != null && !botonesActivos.Contains(this))
         {
+            botonesActivos.Add(this);
             slider1.value -= 1;
+            Destroy(gameObject);
         }
-        // Si el objeto está fuera de "linea f", baja el valor de slider2
-        else if (!adentro && slider2 != null)
-        {
-            slider2.value -= 1;
-        }
-        Destroy(gameObject);
     }
 }
