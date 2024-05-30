@@ -8,6 +8,7 @@ public class BotonesLogica : MonoBehaviour
     public float velocidad;
     public KeyCode tecla; // Tecla asociada al botón
     public Slider slider1; // Primer slider
+    public Slider slider3; // Segundo slider
 
     private static List<BotonesLogica> botonesActivos = new List<BotonesLogica>(); // Lista de botones activos
     private bool adentro = false;
@@ -18,6 +19,10 @@ public class BotonesLogica : MonoBehaviour
         if (slider1 != null)
         {
             slider1.value = slider1.maxValue;
+        }
+        if (slider3 != null)
+        {
+            slider3.value = 0;
         }
     }
 
@@ -55,6 +60,17 @@ public class BotonesLogica : MonoBehaviour
         {
             botonesActivos.Add(this);
             slider1.value -= 1;
+            if (slider3 != null)
+            {
+                slider3.value += 1;
+
+                // Verificar si slider3 ha alcanzado o excedido su valor máximo
+                if (slider3.value >= slider3.maxValue)
+                {
+                    slider3.value = 0; // Reiniciar el valor de slider3 a 0
+                    slider1.value -= 5; // Bajar slider1 por 5 unidades
+                }
+            }
             Destroy(gameObject);
         }
     }

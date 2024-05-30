@@ -566,13 +566,21 @@ PrefabInstance:
       value: boton g (1)
       objectReference: {fileID: 0}
     - target: {fileID: 2809057399440860307, guid: 36d4356903f4be741bb53dfd6d98bb2c, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2809057399440860307, guid: 36d4356903f4be741bb53dfd6d98bb2c, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
     - target: {fileID: 2809057399440860307, guid: 36d4356903f4be741bb53dfd6d98bb2c, type: 3}
       propertyPath: slider2
       value: 
-      objectReference: {fileID: 1922802614}
+      objectReference: {fileID: 693023847}
+    - target: {fileID: 2809057399440860307, guid: 36d4356903f4be741bb53dfd6d98bb2c, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1092,6 +1100,10 @@ PrefabInstance:
       value: boton h (2)
       objectReference: {fileID: 0}
     - target: {fileID: 3133607437961123006, guid: a07e01fc0a8a973498955ada758de523, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133607437961123006, guid: a07e01fc0a8a973498955ada758de523, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
@@ -1099,6 +1111,10 @@ PrefabInstance:
       propertyPath: slider2
       value: 
       objectReference: {fileID: 1922802614}
+    - target: {fileID: 3133607437961123006, guid: a07e01fc0a8a973498955ada758de523, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     - target: {fileID: 4391042720387658462, guid: a07e01fc0a8a973498955ada758de523, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1373,9 +1389,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
+    - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: slider2
+      value: 
+      objectReference: {fileID: 693023847}
+    - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1801,6 +1829,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
@@ -1808,6 +1840,10 @@ PrefabInstance:
       propertyPath: slider2
       value: 
       objectReference: {fileID: 1922802614}
+    - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     - target: {fileID: 7174293056471829101, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
       propertyPath: m_Name
       value: boton j (3)
@@ -1977,7 +2013,6 @@ RectTransform:
   - {fileID: 971679277}
   - {fileID: 1533889818}
   - {fileID: 1943137927}
-  - {fileID: 1148885446}
   m_Father: {fileID: 760082058}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
@@ -2031,7 +2066,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 6
+  m_MaxValue: 20
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -2200,13 +2235,21 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
     - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
       propertyPath: slider2
       value: 
-      objectReference: {fileID: 1922802614}
+      objectReference: {fileID: 693023847}
+    - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     - target: {fileID: 7174293056471829101, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
       propertyPath: m_Name
       value: boton j (1)
@@ -2663,18 +2706,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971679276}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.43, y: 0.68, z: 1}
+  m_LocalScale: {x: 1.4174596, y: 0.22, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 693023846}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.2, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 50.8, y: 51}
+  m_SizeDelta: {x: 75, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971679278
 MonoBehaviour:
@@ -3082,6 +3125,14 @@ PrefabInstance:
       value: boton f(2)
       objectReference: {fileID: 0}
     - target: {fileID: 1971229445469202944, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: m_Size.y
+      value: 5.3966675
+      objectReference: {fileID: 0}
+    - target: {fileID: 1971229445469202944, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: m_Offset.y
+      value: -107.67195
+      objectReference: {fileID: 0}
+    - target: {fileID: 1971229445469202944, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
       propertyPath: m_LayerOverridePriority
       value: 1
       objectReference: {fileID: 0}
@@ -3138,9 +3189,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
+    - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: slider2
+      value: 
+      objectReference: {fileID: 693023847}
+    - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4256,82 +4319,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1148885445
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1148885446}
-  - component: {fileID: 1148885448}
-  - component: {fileID: 1148885447}
-  m_Layer: 5
-  m_Name: tubo estrella
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1148885446
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148885445}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 693023846}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1148885447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148885445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77c951efbee0afa4298e1cf00b00c9e9, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1148885448
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148885445}
-  m_CullTransparentMesh: 1
 --- !u!1 &1177461589
 GameObject:
   m_ObjectHideFlags: 0
@@ -4601,6 +4588,10 @@ PrefabInstance:
       value: boton g (2)
       objectReference: {fileID: 0}
     - target: {fileID: 2809057399440860307, guid: 36d4356903f4be741bb53dfd6d98bb2c, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2809057399440860307, guid: 36d4356903f4be741bb53dfd6d98bb2c, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
@@ -4608,6 +4599,10 @@ PrefabInstance:
       propertyPath: slider2
       value: 
       objectReference: {fileID: 1922802614}
+    - target: {fileID: 2809057399440860307, guid: 36d4356903f4be741bb53dfd6d98bb2c, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4696,7 +4691,7 @@ BoxCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 2
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -5017,6 +5012,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
@@ -5024,6 +5023,10 @@ PrefabInstance:
       propertyPath: slider2
       value: 
       objectReference: {fileID: 1922802614}
+    - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     - target: {fileID: 7174293056471829101, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
       propertyPath: m_Name
       value: boton j (2)
@@ -5094,13 +5097,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
     - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
       propertyPath: slider2
       value: 
-      objectReference: {fileID: 1922802614}
+      objectReference: {fileID: 693023847}
+    - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5200,7 +5211,7 @@ BoxCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 2
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -5377,6 +5388,10 @@ PrefabInstance:
       value: boton h (3)
       objectReference: {fileID: 0}
     - target: {fileID: 3133607437961123006, guid: a07e01fc0a8a973498955ada758de523, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133607437961123006, guid: a07e01fc0a8a973498955ada758de523, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
@@ -5384,6 +5399,10 @@ PrefabInstance:
       propertyPath: slider2
       value: 
       objectReference: {fileID: 1922802614}
+    - target: {fileID: 3133607437961123006, guid: a07e01fc0a8a973498955ada758de523, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     - target: {fileID: 4391042720387658462, guid: a07e01fc0a8a973498955ada758de523, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -5615,6 +5634,10 @@ PrefabInstance:
       propertyPath: slider2
       value: 
       objectReference: {fileID: 1922802614}
+    - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     - target: {fileID: 7174293056471829101, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
       propertyPath: m_Name
       value: boton j (4)
@@ -5832,6 +5855,10 @@ PrefabInstance:
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
+    - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6794,7 +6821,7 @@ BoxCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 2
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -7212,9 +7239,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 30
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 30
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7269,7 +7296,7 @@ BoxCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 2
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -7435,6 +7462,10 @@ PrefabInstance:
       value: boton h (1)
       objectReference: {fileID: 0}
     - target: {fileID: 3133607437961123006, guid: a07e01fc0a8a973498955ada758de523, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133607437961123006, guid: a07e01fc0a8a973498955ada758de523, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
@@ -7442,6 +7473,10 @@ PrefabInstance:
       propertyPath: slider2
       value: 
       objectReference: {fileID: 1922802614}
+    - target: {fileID: 3133607437961123006, guid: a07e01fc0a8a973498955ada758de523, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     - target: {fileID: 4391042720387658462, guid: a07e01fc0a8a973498955ada758de523, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -8581,6 +8616,10 @@ PrefabInstance:
       propertyPath: slider2
       value: 
       objectReference: {fileID: 1922802614}
+    - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8683,13 +8722,21 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
     - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
       propertyPath: slider2
       value: 
-      objectReference: {fileID: 1922802614}
+      objectReference: {fileID: 693023847}
+    - target: {fileID: 3896974873231120020, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     - target: {fileID: 7174293056471829101, guid: f4ac8c054951c7241912a3e2523d4ecc, type: 3}
       propertyPath: m_Name
       value: boton j
@@ -8756,13 +8803,17 @@ PrefabInstance:
       value: boton g
       objectReference: {fileID: 0}
     - target: {fileID: 2809057399440860307, guid: 36d4356903f4be741bb53dfd6d98bb2c, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2809057399440860307, guid: 36d4356903f4be741bb53dfd6d98bb2c, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
     - target: {fileID: 2809057399440860307, guid: 36d4356903f4be741bb53dfd6d98bb2c, type: 3}
       propertyPath: slider2
       value: 
-      objectReference: {fileID: 1922802614}
+      objectReference: {fileID: 693023847}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8779,6 +8830,14 @@ PrefabInstance:
     - target: {fileID: 1698153158381857940, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
       propertyPath: m_Name
       value: boton f
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035997489487815294, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: m_Size.y
+      value: 10.371887
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035997489487815294, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: m_Offset.y
+      value: -89.26303
       objectReference: {fileID: 0}
     - target: {fileID: 3035997489487815294, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
       propertyPath: m_LayerOverridePriority
@@ -8829,13 +8888,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
     - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
       propertyPath: slider2
       value: 
-      objectReference: {fileID: 1922802614}
+      objectReference: {fileID: 693023847}
+    - target: {fileID: 8692351440363869556, guid: e5cd1383bf6da624597fdd0630642a8f, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8854,13 +8921,21 @@ PrefabInstance:
       value: boton h
       objectReference: {fileID: 0}
     - target: {fileID: 3133607437961123006, guid: a07e01fc0a8a973498955ada758de523, type: 3}
+      propertyPath: imagen
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3133607437961123006, guid: a07e01fc0a8a973498955ada758de523, type: 3}
       propertyPath: slider1
       value: 
       objectReference: {fileID: 1757957406}
     - target: {fileID: 3133607437961123006, guid: a07e01fc0a8a973498955ada758de523, type: 3}
       propertyPath: slider2
       value: 
-      objectReference: {fileID: 1922802614}
+      objectReference: {fileID: 693023847}
+    - target: {fileID: 3133607437961123006, guid: a07e01fc0a8a973498955ada758de523, type: 3}
+      propertyPath: slider3
+      value: 
+      objectReference: {fileID: 693023847}
     - target: {fileID: 4391042720387658462, guid: a07e01fc0a8a973498955ada758de523, type: 3}
       propertyPath: m_RootOrder
       value: -1
