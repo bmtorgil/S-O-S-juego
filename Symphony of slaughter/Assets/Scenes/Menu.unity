@@ -4595,9 +4595,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1504807377}
+      - m_Target: {fileID: 11500000, guid: 966c0a460a63f14489728862a942433b, type: 3}
         m_TargetAssemblyTypeName: PanelManager, Assembly-CSharp
-        m_MethodName: MostrarPanelOpciones
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4784,7 +4784,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1504807371}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebcb3da2ff295a9429e92e6da53ef721, type: 3}
+  m_Script: {fileID: 11500000, guid: 966c0a460a63f14489728862a942433b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   menuInicial: {fileID: 2027678989}
@@ -5636,7 +5636,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2027678989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebcb3da2ff295a9429e92e6da53ef721, type: 3}
+  m_Script: {fileID: 11500000, guid: 966c0a460a63f14489728862a942433b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   menuInicial: {fileID: 2027678989}

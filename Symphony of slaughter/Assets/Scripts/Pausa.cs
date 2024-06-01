@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class Pausa : MonoBehaviour
 {
     public GameObject pauseMenuUI;
+    public AudioSource musicAudioSource; // Referencia al componente de audio que reproduce la música
     private bool isPaused = false;
 
     void Start()
@@ -35,6 +36,12 @@ public class Pausa : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+
+        // Reanudar la música si estaba pausada
+        if (musicAudioSource != null)
+        {
+            musicAudioSource.UnPause();
+        }
     }
 
     void Pause()
@@ -43,19 +50,24 @@ public class Pausa : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+
+        // Pausar la música si está reproduciendo
+        if (musicAudioSource != null && musicAudioSource.isPlaying)
+        {
+            musicAudioSource.Pause();
+        }
     }
 
     public void Restart()
     {
-        // Reiniciar la escena actual
+        // Reiniciar la primera escena
         Time.timeScale = 1f; // Asegurarse de que el tiempo esté corriendo
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(0);
     }
 
     public void QuitGame()
     {
-        // Salir del juego
-        Debug.Log("Quit Game");
-        Application.Quit();
+        // Volver al menú inicial (primera escena)
+        SceneManager.LoadScene(0);
     }
 }
