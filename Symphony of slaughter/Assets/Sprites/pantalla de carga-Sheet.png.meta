@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 55d760503b6d99642ab81b62a6699409
+guid: 9d9e3c5cab9190944b574a0606674027
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,127 +110,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: luciferoz-Sheet_0
+      name: pantalla de carga-Sheet_0
       rect:
         serializedVersion: 2
-        x: 78
-        y: 8
-        width: 510
-        height: 569
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 29
+        y: 1516
+        width: 2565
+        height: 1447
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06965a3e476e8b442804b345e0af4a11
-      internalID: 69217088
+      spriteID: 3b9f91ab0ca71b144ab14d15154f0346
+      internalID: 607373266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: luciferoz-Sheet_1
+      name: pantalla de carga-Sheet_1
       rect:
         serializedVersion: 2
-        x: 717
-        y: 3
-        width: 510
-        height: 569
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2638
+        y: 1516
+        width: 2565
+        height: 1447
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31cbfa0a9b34f7948a9d742adbfc3b29
-      internalID: -571719685
+      spriteID: c6dbbd74c7557a842ac6e6a1077963be
+      internalID: -1460386998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: luciferoz-Sheet_2
+      name: pantalla de carga-Sheet_2
       rect:
         serializedVersion: 2
-        x: 1358
-        y: 8
-        width: 510
-        height: 569
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 29
+        y: 29
+        width: 2565
+        height: 1447
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: faf6dbf7462ca9e459fc35b051b1404f
-      internalID: 550990563
+      spriteID: 9dd1e2b39dfd1e04fb3eb5d4c97a8154
+      internalID: 1984333803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: luciferoz-Sheet_3
+      name: pantalla de carga-Sheet_3
       rect:
         serializedVersion: 2
-        x: 1998
-        y: 3
-        width: 510
-        height: 568
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2638
+        y: 29
+        width: 2565
+        height: 1447
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef5418fee75ee074d8f5b5228edf6d87
-      internalID: 2110919385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: luciferoz-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 2637
-        y: 8
-        width: 510
-        height: 569
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 274dd982978d5b94da9cfa9ee0e52687
-      internalID: 132698108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: luciferoz-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 3278
-        y: 3
-        width: 510
-        height: 568
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd4ebcd32509e2045b14f1055973e0a8
-      internalID: 495995597
+      spriteID: 9a17e4c5b27d95d44af0d641758e0679
+      internalID: -2063675187
       vertices: []
       indices: 
       edges: []
@@ -246,12 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      luciferoz-Sheet_0: 69217088
-      luciferoz-Sheet_1: -571719685
-      luciferoz-Sheet_2: 550990563
-      luciferoz-Sheet_3: 2110919385
-      luciferoz-Sheet_4: 132698108
-      luciferoz-Sheet_5: 495995597
+      pantalla de carga-Sheet_0: 607373266
+      pantalla de carga-Sheet_1: -1460386998
+      pantalla de carga-Sheet_2: 1984333803
+      pantalla de carga-Sheet_3: -2063675187
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

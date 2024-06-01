@@ -5,7 +5,7 @@ using TMPro;
 public class ControlTexto : MonoBehaviour
 {
     public TextMeshProUGUI texto;
-    public float velocidadDesplazamiento = 10f; // Velocidad de desplazamiento del texto
+    public float velocidadDesplazamiento = 12f; // Velocidad de desplazamiento del texto
 
     void Start()
     {
@@ -24,7 +24,7 @@ public class ControlTexto : MonoBehaviour
         while (Time.time - tiempoInicio < 3f)
         {
             // Desplaza gradualmente el texto hacia arriba
-            texto.rectTransform.anchoredPosition += Vector2.up * -velocidadDesplazamiento * Time.deltaTime;
+            texto.rectTransform.anchoredPosition += Vector2.up * velocidadDesplazamiento * Time.deltaTime;
 
             yield return null; // Espera un frame
         }
