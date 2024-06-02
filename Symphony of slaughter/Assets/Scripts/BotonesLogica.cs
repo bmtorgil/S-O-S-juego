@@ -9,6 +9,7 @@ public class BotonesLogica : MonoBehaviour
     public KeyCode tecla; // Tecla asociada al botón
     public Slider slider1; // Primer slider
     public Slider slider3; // Segundo slider
+    
 
     private static List<BotonesLogica> botonesActivos = new List<BotonesLogica>(); // Lista de botones activos
     private bool adentro = false;
@@ -29,7 +30,31 @@ public class BotonesLogica : MonoBehaviour
     void Update()
     {
         // Movimiento de arriba a abajo
-        transform.position += Vector3.down * velocidad * Time.deltaTime;
+        transform.position += Vector3.down * (velocidad * 0.9f) * Time.deltaTime;
+
+        // Verifica si el objeto ha llegado a la mitad inferior de la pantalla
+        if (transform.position.y <= Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height / 1.7f, 0)).y)
+        {
+            // Movimiento lateral según la tecla asignada
+            switch (tecla)
+            {
+                case KeyCode.F:
+                    transform.position += Vector3.left * (velocidad * 0.4f) * Time.deltaTime; // Izquierda
+                    break;
+                case KeyCode.G:
+                    transform.position += Vector3.left * (velocidad * 0.2f) * Time.deltaTime; // Izquierda pero menos
+                    break;
+                case KeyCode.H:
+                    transform.position += Vector3.right * (velocidad * 0.2f) * Time.deltaTime; // Derecha pero menos
+                    break;
+                case KeyCode.J:
+                    transform.position += Vector3.right * (velocidad * 0.4f) * Time.deltaTime; // Derecha
+                    break;
+            }
+
+       
+
+        }
 
         if (Input.GetKeyDown(tecla))
         {
