@@ -20,7 +20,7 @@ public class Demonio : MonoBehaviour
     void Update()
     {
         // Verificar si han pasado al menos 4 segundos desde el inicio de la escena
-        if (Time.time - startTime >= 5)
+        if (Time.time - startTime >= 7)
         {
             if (slider != null)
             {
