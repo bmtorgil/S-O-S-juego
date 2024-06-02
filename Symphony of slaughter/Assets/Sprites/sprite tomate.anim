@@ -43,7 +43,7 @@ AnimationClip:
     - time: 1
       value: {fileID: -1179167972, guid: de03aff2a04a7e5459eda8e00413781e, type: 3}
     - time: 1.1666666
-      value: {fileID: 596159411, guid: de03aff2a04a7e5459eda8e00413781e, type: 3}
+      value: {fileID: 539053618, guid: de03aff2a04a7e5459eda8e00413781e, type: 3}
     - time: 1.25
       value: {fileID: 117562796, guid: de03aff2a04a7e5459eda8e00413781e, type: 3}
     - time: 1.3333334
@@ -97,7 +97,7 @@ AnimationClip:
     - {fileID: 948806738, guid: de03aff2a04a7e5459eda8e00413781e, type: 3}
     - {fileID: 539053618, guid: de03aff2a04a7e5459eda8e00413781e, type: 3}
     - {fileID: -1179167972, guid: de03aff2a04a7e5459eda8e00413781e, type: 3}
-    - {fileID: 596159411, guid: de03aff2a04a7e5459eda8e00413781e, type: 3}
+    - {fileID: 539053618, guid: de03aff2a04a7e5459eda8e00413781e, type: 3}
     - {fileID: 117562796, guid: de03aff2a04a7e5459eda8e00413781e, type: 3}
     - {fileID: -1058402810, guid: de03aff2a04a7e5459eda8e00413781e, type: 3}
     - {fileID: -254619207, guid: de03aff2a04a7e5459eda8e00413781e, type: 3}
@@ -132,4 +132,25 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.9166667
+    functionName: PlaySound
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.4166666
+    functionName: ShowGameObject
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2.0833333
+    functionName: ShowCanvas
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
