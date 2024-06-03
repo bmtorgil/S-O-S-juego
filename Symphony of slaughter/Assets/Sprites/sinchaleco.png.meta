@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d073d1c45770664383826685f009198
+guid: 92cac1c251ebb1143a793579e1c67cd4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: sinchaleco_0
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 16
+        width: 1008
+        height: 1138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb59ee88d084934f89d17b18851ae3c
+      internalID: 67212098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sinchaleco_1
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 6
+        width: 1018
+        height: 1138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b8a748b8ee4114cbec587bf82cb086
+      internalID: -1435930704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sinchaleco_2
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 16
+        width: 1008
+        height: 1138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459249795c9ec9b4d89d05d88a85be53
+      internalID: 1711802664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sinchaleco_3
+      rect:
+        serializedVersion: 2
+        x: 3996
+        y: 6
+        width: 1018
+        height: 1138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a08e5dd61a3f54a86219f65dd3507d
+      internalID: 184405158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +203,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sinchaleco_0: 67212098
+      sinchaleco_1: -1435930704
+      sinchaleco_2: 1711802664
+      sinchaleco_3: 184405158
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

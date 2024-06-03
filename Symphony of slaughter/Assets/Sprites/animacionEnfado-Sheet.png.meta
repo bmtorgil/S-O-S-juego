@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 55d760503b6d99642ab81b62a6699409
+guid: 5911f9d03af6d6a469afc165df3b98c0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,127 +110,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: luciferoz-Sheet_0
+      name: animacionEnfado-Sheet_0
       rect:
         serializedVersion: 2
-        x: 78
+        x: 178
         y: 8
-        width: 510
-        height: 569
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 954
+        height: 1114
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06965a3e476e8b442804b345e0af4a11
-      internalID: 69217088
+      spriteID: d002bf6feef125c4e87ec59348b18e8c
+      internalID: 829214485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: luciferoz-Sheet_1
+      name: animacionEnfado-Sheet_1
       rect:
         serializedVersion: 2
-        x: 717
-        y: 3
-        width: 510
-        height: 569
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31cbfa0a9b34f7948a9d742adbfc3b29
-      internalID: -571719685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: luciferoz-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 1358
+        x: 1458
         y: 8
-        width: 510
-        height: 569
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 964
+        height: 1094
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: faf6dbf7462ca9e459fc35b051b1404f
-      internalID: 550990563
+      spriteID: 3777222b0726130498e44e975543d6f0
+      internalID: -1605570529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: luciferoz-Sheet_3
+      name: animacionEnfado-Sheet_2
       rect:
         serializedVersion: 2
-        x: 1998
-        y: 3
-        width: 510
-        height: 568
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef5418fee75ee074d8f5b5228edf6d87
-      internalID: 2110919385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: luciferoz-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 2637
+        x: 2748
         y: 8
-        width: 510
-        height: 569
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 934
+        height: 1114
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 274dd982978d5b94da9cfa9ee0e52687
-      internalID: 132698108
+      spriteID: cff5202a1c1345b4ba8328a4d2075a89
+      internalID: 1046752695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: luciferoz-Sheet_5
+      name: animacionEnfado-Sheet_3
       rect:
         serializedVersion: 2
-        x: 3278
-        y: 3
-        width: 510
-        height: 568
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 3998
+        y: 8
+        width: 1014
+        height: 1134
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd4ebcd32509e2045b14f1055973e0a8
-      internalID: 495995597
+      spriteID: a214c2d4aa7d90549a62f4821c303619
+      internalID: -1691442676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacionEnfado-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 5278
+        y: 8
+        width: 1014
+        height: 1134
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815e032817d39f149b84c110087114ee
+      internalID: -481106276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacionEnfado-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 6578
+        y: 8
+        width: 984
+        height: 1144
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad740ac879cdae74cbd42e7089f7fc3f
+      internalID: -811095615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacionEnfado-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 7858
+        y: 8
+        width: 984
+        height: 1144
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afc11a4e363e394abb2f1d989f8c1d6
+      internalID: -1472797036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animacionEnfado-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 9138
+        y: 8
+        width: 984
+        height: 1144
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab60db932ac3424da05818bdff558fd
+      internalID: 1540433034
       vertices: []
       indices: 
       edges: []
@@ -246,12 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      luciferoz-Sheet_0: 69217088
-      luciferoz-Sheet_1: -571719685
-      luciferoz-Sheet_2: 550990563
-      luciferoz-Sheet_3: 2110919385
-      luciferoz-Sheet_4: 132698108
-      luciferoz-Sheet_5: 495995597
+      animacionEnfado-Sheet_0: 829214485
+      animacionEnfado-Sheet_1: -1605570529
+      animacionEnfado-Sheet_2: 1046752695
+      animacionEnfado-Sheet_3: -1691442676
+      animacionEnfado-Sheet_4: -481106276
+      animacionEnfado-Sheet_5: -811095615
+      animacionEnfado-Sheet_6: -1472797036
+      animacionEnfado-Sheet_7: 1540433034
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

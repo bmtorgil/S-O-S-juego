@@ -19,7 +19,7 @@ public class Ganar : MonoBehaviour
         if (objectToShake != null)
         {
             originalPosition = objectToShake.transform.localPosition;
-            StartCoroutine(ShakeObject(2.0f)); // Sacude el objeto durante 2 segundos
+            StartCoroutine(ShakeObject(1.5f)); // Sacude el objeto durante 2 segundos
         }
     }
 

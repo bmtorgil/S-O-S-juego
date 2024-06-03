@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d073d1c45770664383826685f009198
+guid: 2ab1607a54f0be645a1dce76e5c1bcd7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -108,7 +108,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: enfadoDos-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 6
+        width: 1018
+        height: 1138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec716ac8cc7dab42bc522b042e09601
+      internalID: 17496595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfadoDos-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 16
+        width: 1008
+        height: 1138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d4c70199589b74ca634d934732bd5a
+      internalID: -218087432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfadoDos-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 6
+        width: 1018
+        height: 1138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f02228b9ff71c42a507ef62efbd464
+      internalID: 410760439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enfadoDos-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3996
+        y: 16
+        width: 1008
+        height: 1138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c354d199efbbf0d40a2caa2eb3de6f62
+      internalID: -62451239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +203,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      enfadoDos-Sheet_0: 17496595
+      enfadoDos-Sheet_1: -218087432
+      enfadoDos-Sheet_2: 410760439
+      enfadoDos-Sheet_3: -62451239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
