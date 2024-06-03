@@ -11,6 +11,7 @@ public class Demonio : MonoBehaviour
 
     private bool isShowingSprite = true; // Variable para controlar si se muestra el sprite o la imagen
     private bool sliderAtZero = false; // Variable para controlar si el slider está en 0 por primera vez
+    private bool audioPlayed = false; // Variable para controlar si el audio ya se ha reproducido
     private float startTime; // Tiempo de inicio de la escena
 
     void Start()
@@ -20,7 +21,7 @@ public class Demonio : MonoBehaviour
 
     void Update()
     {
-        // Verificar si han pasado al menos 4 segundos desde el inicio de la escena
+        // Verificar si han pasado al menos 7 segundos desde el inicio de la escena
         if (Time.time - startTime >= 7)
         {
             if (slider != null)
@@ -33,10 +34,19 @@ public class Demonio : MonoBehaviour
                     {
                         StartCoroutine(ShowImageForHalfSecond());
                     }
+                    if (!audioPlayed)
+                    {
+                        if (audioSource != null)
+                        {
+                            audioSource.Play();
+                            audioPlayed = true;
+                        }
+                    }
                 }
                 else
                 {
                     sliderAtZero = false; // Marcar que ya no está en 0 por primera vez
+                    audioPlayed = false; // Reiniciar el indicador de audio reproducido
                 }
             }
         }
@@ -50,17 +60,16 @@ public class Demonio : MonoBehaviour
         spriteObject.SetActive(false);
         imagenObject.SetActive(true);
 
-        // Reproducir el audio
-        if (audioSource != null)
-        {
-            audioSource.Play();
-        }
+        // Esperar a que la imagen desaparezca
+        yield return new WaitForSeconds(0.3f);
+
+        // Ocultar la imagen
+        imagenObject.SetActive(false);
 
         // Esperar medio segundo
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.299f);
 
-        // Ocultar la imagen y mostrar el sprite
-        imagenObject.SetActive(false);
+        // Mostrar el sprite
         spriteObject.SetActive(true);
 
         isShowingSprite = true;

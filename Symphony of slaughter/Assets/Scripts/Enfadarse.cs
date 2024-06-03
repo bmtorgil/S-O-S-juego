@@ -1,66 +1,59 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections; // Necesario para IEnumerator
+using System.Collections;
 
-public class GameObjectChanger : MonoBehaviour
+public class Enfadarse : MonoBehaviour
 {
-    public Slider slider; // Asigna el Slider en el Inspector
-
+    public Slider slider;
     public GameObject gameObject1;
     public GameObject gameObject2;
     public GameObject gameObject3;
     public GameObject gameObject4;
+    public GameObject gameObject5;
 
-    private bool gameObject3Played = false;
+    private bool gameObject4Played = false;
 
     void Start()
     {
         slider.onValueChanged.AddListener(OnSliderValueChanged);
-        ActivateGameObject(gameObject1); // Inicialmente activar gameObject1
+        SetGameObjectActive(gameObject1);
     }
 
     void OnSliderValueChanged(float value)
     {
         float percentage = value / slider.maxValue;
 
-        if (percentage <= 0.5f && percentage > 0.4f)
+        // Cambiar el gameobject dependiendo del porcentaje
+        if (percentage >= 0.5f)
         {
-            ActivateGameObject(gameObject2);
+            SetGameObjectActive(gameObject2);
         }
-        else if (percentage <= 0.4f && percentage > 0.25f)
+
+        if (percentage >= 0.6f)
         {
-            if (!gameObject3Played)
-            {
-                ActivateGameObject(gameObject3);
-                StartCoroutine(PlayGameObject3Once());
-            }
+            SetGameObjectActive(gameObject3);
         }
-        else if (percentage <= 0.25f)
+
+        if (percentage >= 0.75f && !gameObject4Played)
         {
-            if (gameObject3Played)
-            {
-                ActivateGameObject(gameObject4);
-            }
-        }
-        else
-        {
-            ActivateGameObject(gameObject1);
+            SetGameObjectActive(gameObject4);
+            gameObject4Played = true;
+            // Reproducir sonido o animación de gameObject4 aquí
+            Invoke("ChangeToGameObject5", 1.0f); // Cambiar a gameObject5 después de 1 segundo
         }
     }
 
-    IEnumerator PlayGameObject3Once()
+    void ChangeToGameObject5()
     {
-        gameObject3Played = true;
-        // Asume que gameObject3 tiene una animación que dura 1 segundo
-        yield return new WaitForSeconds(1.2f); // Espera a que la animación se reproduzca una vez
-        ActivateGameObject(gameObject4); // Cambia a gameObject4 después de que gameObject3 se reproduce una vez
+        SetGameObjectActive(gameObject5);
     }
 
-    void ActivateGameObject(GameObject go)
+    void SetGameObjectActive(GameObject go)
     {
         gameObject1.SetActive(go == gameObject1);
         gameObject2.SetActive(go == gameObject2);
         gameObject3.SetActive(go == gameObject3);
         gameObject4.SetActive(go == gameObject4);
+        gameObject5.SetActive(go == gameObject5);
     }
 }
