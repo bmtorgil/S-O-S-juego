@@ -1,4 +1,4 @@
- using System.Collections;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +7,7 @@ public class Demonio : MonoBehaviour
     public Slider slider;
     public GameObject spriteObject; // Referencia al GameObject que contiene el sprite
     public GameObject imagenObject; // Referencia al GameObject que contiene la imagen
+    public AudioSource audioSource; // Referencia al AudioSource
 
     private bool isShowingSprite = true; // Variable para controlar si se muestra el sprite o la imagen
     private bool sliderAtZero = false; // Variable para controlar si el slider está en 0 por primera vez
@@ -48,6 +49,12 @@ public class Demonio : MonoBehaviour
         // Ocultar el sprite y mostrar la imagen
         spriteObject.SetActive(false);
         imagenObject.SetActive(true);
+
+        // Reproducir el audio
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
 
         // Esperar medio segundo
         yield return new WaitForSeconds(0.5f);
