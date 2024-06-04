@@ -62,7 +62,7 @@ public class Pausa : MonoBehaviour
     {
         // Reiniciar la primera escena
         Time.timeScale = 1f; // Asegurarse de que el tiempo esté corriendo
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
     }
 
     public void QuitGame()
