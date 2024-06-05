@@ -29,13 +29,13 @@ public class BotonesLogica : MonoBehaviour
 
     void Update()
     {
-        // Movimiento de arriba a abajo
+        
         transform.position += Vector3.down * (velocidad * 1) * Time.deltaTime;
 
-        // Verifica si el objeto ha llegado a la mitad inferior de la pantalla
+        
         if (transform.position.y <= Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height / 1.7f, 0)).y)
         {
-            // Movimiento lateral según la tecla asignada
+           
             switch (tecla)
             {
                 case KeyCode.F:
