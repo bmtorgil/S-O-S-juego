@@ -1,80 +1,61 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class OscurecerLinea : MonoBehaviour
 {
-    public KeyCode teclaCorrespondiente; // La tecla que corresponde a esta línea
-    public Image imagen; // Referencia a la imagen correspondiente
-    private Color originalColor; // Guardar el color original de la imagen
-    private bool objetoEncima = false; // Variable para verificar si hay un objeto encima
-    private GameObject objetoActual; // Referencia al objeto actual que está encima
+    public KeyCode tecla; // Tecla asociada al objeto
+    private Renderer objetoRenderer; // Renderer del objeto
+    private Color originalColor; // Color original del objeto
+    private bool teclaPresionada = false; // Indica si la tecla está siendo presionada
 
     void Start()
     {
-        if (imagen != null)
-        {
-            originalColor = imagen.color; // Guardar el color original de la imagen
-        }
-        else
-        {
-            Debug.LogError("No se encontró el componente Image asignado.");
-        }
+        // Obtener el componente Renderer del objeto
+        objetoRenderer = GetComponent<Renderer>();
+
+        // Guardar el color original del objeto
+        originalColor = objetoRenderer.material.color;
     }
 
     void Update()
     {
-        if (Input.GetKey(teclaCorrespondiente) && objetoEncima)
+        // Verificar si se presiona la tecla
+        if (Input.GetKeyDown(tecla))
         {
-            if (objetoActual != null)
-            {
-                Destroy(objetoActual);
-                objetoActual = null;
-                objetoEncima = false;
-                OscurecerImagen();
-                Debug.Log("Botón destruido y línea oscurecida.");
-            }
+            teclaPresionada = true;
         }
-        else if (!Input.GetKey(teclaCorrespondiente))
+
+        // Verificar si se suelta la tecla
+        if (Input.GetKeyUp(tecla))
         {
-            RestaurarColorOriginal();
+            teclaPresionada = false;
+        }
+
+        // Si la tecla está presionada, oscurecer el color del objeto
+        if (teclaPresionada)
+        {
+            Oscurecer();
+        }
+        else // Si la tecla no está presionada, restaurar el color original del objeto
+        {
+            RestaurarColor();
         }
     }
 
-    void OscurecerImagen()
+    // Función para oscurecer el color del objeto
+    void Oscurecer()
     {
-        if (imagen != null)
-        {
-            imagen.color = new Color(originalColor.r * 0.5f, originalColor.g * 0.5f, originalColor.b * 0.5f, originalColor.a); // Oscurecer la imagen
-        }
+        Color nuevoColor = originalColor;
+        nuevoColor.r *= 0.5f; // Reducir el componente de rojo a la mitad
+        nuevoColor.g *= 0.5f; // Reducir el componente de verde a la mitad
+        nuevoColor.b *= 0.5f; // Reducir el componente de azul a la mitad
+        objetoRenderer.material.color = nuevoColor; // Aplicar el nuevo color al objeto
     }
 
-    void RestaurarColorOriginal()
+    // Función para restaurar el color original del objeto
+    void RestaurarColor()
     {
-        if (imagen != null)
-        {
-            imagen.color = originalColor;
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("flecha"))
-        {
-            objetoEncima = true;
-            objetoActual = other.gameObject;
-            Debug.Log("Objeto entró en la línea: " + other.gameObject.name);
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("flecha"))
-        {
-            objetoEncima = false;
-            objetoActual = null;
-            Debug.Log("Objeto salió de la línea: " + other.gameObject.name);
-        }
+        objetoRenderer.material.color = originalColor; // Restaurar el color original del objeto
     }
 }

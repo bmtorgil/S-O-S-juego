@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/PreCinematica.unity
+    guid: b5d137d13844b9d4e8ca805938af2fdd
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -19,5 +22,5 @@ EditorBuildSettings:
     guid: 2ec68fafe18b5c14b89aaabf64c94e24
   - enabled: 1
     path: Assets/Scenes/Ganar.unity
-    guid: 6a7f38c8267c8c640affcd8a1021bd28
+    guid: 67e79cf3b93f5f84d911d32913d4386f
   m_configObjects: {}

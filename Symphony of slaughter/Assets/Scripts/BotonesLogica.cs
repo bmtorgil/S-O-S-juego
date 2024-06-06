@@ -9,12 +9,10 @@ public class BotonesLogica : MonoBehaviour
     public KeyCode tecla; // Tecla asociada al botón
     public Slider slider1; // Primer slider
     public Slider slider3; // Segundo slider
-    public GameObject objetoDebajo; // Objeto que se oscurecerá
-    private SpriteRenderer objetoRenderer; // Renderer del objeto debajo
+    
 
     private static List<BotonesLogica> botonesActivos = new List<BotonesLogica>(); // Lista de botones activos
     private bool adentro = false;
-    private Color originalColor;
 
     void Start()
     {
@@ -27,23 +25,17 @@ public class BotonesLogica : MonoBehaviour
         {
             slider3.value = 0;
         }
-
-        if (objetoDebajo != null)
-        {
-            objetoRenderer = objetoDebajo.GetComponent<SpriteRenderer>();
-            if (objetoRenderer != null)
-            {
-                originalColor = objetoRenderer.color; // Guardar el color original del objeto
-            }
-        }
     }
 
     void Update()
     {
+        
         transform.position += Vector3.down * (velocidad * 1) * Time.deltaTime;
 
+        
         if (transform.position.y <= Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height / 1.7f, 0)).y)
         {
+           
             switch (tecla)
             {
                 case KeyCode.F:
@@ -59,15 +51,14 @@ public class BotonesLogica : MonoBehaviour
                     transform.position += Vector3.right * (velocidad * 0.4f) * Time.deltaTime; // Derecha
                     break;
             }
+
+       
+
         }
 
         if (Input.GetKeyDown(tecla))
         {
             PressButton();
-        }
-        if (Input.GetKeyUp(tecla))
-        {
-            ReleaseButton();
         }
     }
 
@@ -105,23 +96,7 @@ public class BotonesLogica : MonoBehaviour
                     slider1.value -= 5; // Bajar slider1 por 5 unidades
                 }
             }
-
-            // Oscurecer el objeto debajo
-            if (objetoRenderer != null)
-            {
-                objetoRenderer.color = new Color(originalColor.r * 0.5f, originalColor.g * 0.5f, originalColor.b * 0.5f, originalColor.a);
-            }
-
             Destroy(gameObject);
-        }
-    }
-
-    public void ReleaseButton()
-    {
-        // Restaurar el color original del objeto debajo cuando se suelta la tecla
-        if (objetoRenderer != null && !botonesActivos.Contains(this))
-        {
-            objetoRenderer.color = originalColor;
         }
     }
 }
