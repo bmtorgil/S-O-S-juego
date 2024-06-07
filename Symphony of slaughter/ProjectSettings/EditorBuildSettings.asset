@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Cinematica.unity
+    guid: b57518fbf49209443a467e80c45d569c
+  - enabled: 1
+    path: Assets/Scenes/2Cinematica.unity
+    guid: d3bf84d00678f224daebc3518ab5c7de
+  - enabled: 1
+    path: Assets/Scenes/3Cinematica 1.unity
+    guid: 59af4ef8eaca2ae42bef64f3add2e12e
+  - enabled: 1
     path: Assets/Scenes/Carga.unity
     guid: 96d9bf205d86b0549b3c2668e5dfa581
   - enabled: 1
@@ -23,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ganar.unity
     guid: 67e79cf3b93f5f84d911d32913d4386f
+  - enabled: 1
+    path: Assets/Scenes/Ganar2.unity
+    guid: 04101e57d4056fe42ad59c44e7e946e7
   m_configObjects: {}

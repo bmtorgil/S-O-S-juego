@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class DialogoController : MonoBehaviour
 {
     public TextMeshProUGUI dialogoText;
+    public TextMeshProUGUI dialogoTextOpcion2; // Nuevo texto
     public Image personajeImage;
     public AudioClip sonidoTecla;
     public float velocidadTexto = 0.05f;
@@ -14,8 +15,11 @@ public class DialogoController : MonoBehaviour
     public GameObject fadePanel; // Panel de fundido a negro
     public float fadeDuration = 1.0f; // Duración del fundido
     [TextArea(3, 10)] public string[] dialogos;
+    [TextArea(3, 10)] public string[] dialogosOpcion2; // Nuevos diálogos
     public Sprite[] personajes;
     public AudioClip[] audios; // Array de audios correspondientes a cada diálogo
+
+    public Color[] coloresTextoOpcion2; // Arreglo de colores para el texto de la opción 2
 
     private AudioSource audioSource;
     private int indiceDialogo;
@@ -52,19 +56,25 @@ public class DialogoController : MonoBehaviour
     void OcultarDialogo()
     {
         dialogoText.gameObject.SetActive(false);
+        dialogoTextOpcion2.gameObject.SetActive(false); // Ocultar el nuevo texto
         personajeImage.gameObject.SetActive(false);
         panelDialogo.SetActive(false); // Ocultar el panel de diálogo al inicio
     }
 
-    void MostrarDialogo()
-    {
-        StartCoroutine(MostrarTexto(dialogos[indiceDialogo]));
-        personajeImage.sprite = personajes[indiceDialogo];
-        ReproducirAudio();
-        dialogoText.gameObject.SetActive(true);
-        personajeImage.gameObject.SetActive(true);
-        panelDialogo.SetActive(true); // Mostrar el panel de diálogo
-    }
+void MostrarDialogo()
+{
+    StartCoroutine(MostrarTexto(dialogos[indiceDialogo]));
+    // Elimina la llamada a StartCoroutine para MostrarTextoOpcion2
+    dialogoTextOpcion2.text = dialogosOpcion2[indiceDialogo]; // Mostrar el nuevo texto sin animación
+    dialogoTextOpcion2.color = coloresTextoOpcion2[indiceDialogo]; // Asignar el color del texto de la opción 2
+    personajeImage.sprite = personajes[indiceDialogo];
+    ReproducirAudio();
+    dialogoText.gameObject.SetActive(true);
+    dialogoTextOpcion2.gameObject.SetActive(true); // Mostrar el nuevo texto
+    personajeImage.gameObject.SetActive(true);
+    panelDialogo.SetActive(true); // Mostrar el panel de diálogo
+}
+
 
     void OcultarFadePanel()
     {
@@ -85,6 +95,18 @@ public class DialogoController : MonoBehaviour
             {
                 audioSource.PlayOneShot(sonidoTecla);
             }
+            yield return new WaitForSeconds(velocidadTexto);
+        }
+        escribiendo = false;
+    }
+
+    IEnumerator MostrarTextoOpcion2(string texto)
+    {
+        escribiendo = true;
+        dialogoTextOpcion2.text = "";
+        foreach (char letra in texto.ToCharArray())
+        {
+            dialogoTextOpcion2.text += letra;
             yield return new WaitForSeconds(velocidadTexto);
         }
         escribiendo = false;
@@ -123,4 +145,6 @@ public class DialogoController : MonoBehaviour
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    
 }

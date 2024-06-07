@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -134,9 +134,9 @@ TextureImporter:
       name: sprites intestino_1
       rect:
         serializedVersion: 2
-        x: 3233
+        x: 3240
         y: 3672
-        width: 1614
+        width: 1607
         height: 908
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -157,7 +157,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1620
         y: 3672
-        width: 1614
+        width: 1603
         height: 908
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -178,7 +178,7 @@ TextureImporter:
         serializedVersion: 2
         x: 4833
         y: 3672
-        width: 1614
+        width: 1621
         height: 908
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -197,9 +197,9 @@ TextureImporter:
       name: sprites intestino_4
       rect:
         serializedVersion: 2
-        x: 6466
+        x: 6470
         y: 3672
-        width: 1614
+        width: 1610
         height: 908
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -218,9 +218,9 @@ TextureImporter:
       name: sprites intestino_5
       rect:
         serializedVersion: 2
-        x: 6
+        x: 10
         y: 2752
-        width: 1614
+        width: 1597
         height: 908
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -240,9 +240,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1620
-        y: 2752
-        width: 1614
-        height: 908
+        y: 2755
+        width: 1604
+        height: 905
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: sprites intestino_7
       rect:
         serializedVersion: 2
-        x: 3233
-        y: 2752
-        width: 1614
-        height: 908
+        x: 3240
+        y: 2755
+        width: 1600
+        height: 905
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: sprites intestino_8
       rect:
         serializedVersion: 2
-        x: 4851
-        y: 2752
-        width: 1614
-        height: 908
+        x: 4855
+        y: 2755
+        width: 1600
+        height: 905
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,9 +302,9 @@ TextureImporter:
       name: sprites intestino_9
       rect:
         serializedVersion: 2
-        x: 6464
+        x: 6470
         y: 2752
-        width: 1614
+        width: 1608
         height: 908
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -323,10 +323,10 @@ TextureImporter:
       name: sprites intestino_11
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1836
-        width: 1614
-        height: 908
+        x: 10
+        y: 1840
+        width: 1600
+        height: 900
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: sprites intestino_12
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 1836
-        width: 1614
-        height: 908
+        x: 1625
+        y: 1840
+        width: 1600
+        height: 900
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +365,10 @@ TextureImporter:
       name: sprites intestino_13
       rect:
         serializedVersion: 2
-        x: 3233
-        y: 1836
-        width: 1614
-        height: 908
+        x: 3240
+        y: 1840
+        width: 1600
+        height: 900
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +386,10 @@ TextureImporter:
       name: sprites intestino_14
       rect:
         serializedVersion: 2
-        x: 4851
-        y: 1836
-        width: 1614
-        height: 908
+        x: 4855
+        y: 1840
+        width: 1600
+        height: 900
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +407,10 @@ TextureImporter:
       name: sprites intestino_15
       rect:
         serializedVersion: 2
-        x: 6464
-        y: 1836
-        width: 1614
-        height: 908
+        x: 6470
+        y: 1840
+        width: 1600
+        height: 900
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: sprites intestino_16
       rect:
         serializedVersion: 2
-        x: 6
-        y: 921
-        width: 1614
-        height: 908
+        x: 10
+        y: 925
+        width: 1600
+        height: 900
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +449,10 @@ TextureImporter:
       name: sprites intestino_17
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 921
-        width: 1614
-        height: 908
+        x: 1625
+        y: 925
+        width: 1600
+        height: 900
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +470,10 @@ TextureImporter:
       name: sprites intestino_18
       rect:
         serializedVersion: 2
-        x: 3233
-        y: 921
-        width: 1614
-        height: 908
+        x: 3240
+        y: 925
+        width: 1600
+        height: 900
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,10 +491,10 @@ TextureImporter:
       name: sprites intestino_19
       rect:
         serializedVersion: 2
-        x: 4851
-        y: 921
-        width: 1614
-        height: 908
+        x: 4855
+        y: 925
+        width: 1600
+        height: 900
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,10 +512,10 @@ TextureImporter:
       name: sprites intestino_20
       rect:
         serializedVersion: 2
-        x: 6464
-        y: 921
-        width: 1614
-        height: 908
+        x: 6470
+        y: 925
+        width: 1600
+        height: 899
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,10 +533,10 @@ TextureImporter:
       name: sprites intestino_21
       rect:
         serializedVersion: 2
-        x: 6
-        y: 6
-        width: 1614
-        height: 908
+        x: 10
+        y: 10
+        width: 1600
+        height: 904
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
